@@ -3,7 +3,6 @@
 cd ..
 
 # custom config
-DATA= "/kaggle/input/oh-data" # you may change your path to dataset here
 TRAINER=DAPL
 
 DATASET=$1 # name of the dataset
