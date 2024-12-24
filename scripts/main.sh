@@ -16,14 +16,14 @@ NAME=$6 # job name
 
 SEED=42
 
-DIR=output/${DATASET}/${TRAINER}/${CFG}/${T}_${TAU}_${U}_${NAME}/a2c/seed_${SEED}
+DIR=/kaggle/working/DAPrompt/output/${DATASET}/${TRAINER}/${CFG}/${T}_${TAU}_${U}_${NAME}/a2c/seed_${SEED}
 
-python train.py \
+python /kaggle/working/DAPrompt/train.py \
 --root "/kaggle/input/oh-data" \
 --seed ${SEED} \
 --trainer ${TRAINER} \
---dataset-config-file configs/datasets/${DATASET}.yaml \
---config-file configs/trainers/${TRAINER}/${CFG}.yaml \
+--dataset-config-file /kaggle/working/DAPrompt/configs/datasets/${DATASET}.yaml \
+--config-file /kaggle/working/DAPrompt/configs/trainers/${TRAINER}/${CFG}.yaml \
 --output-dir ${DIR} \
 TRAINER.DAPL.T ${T} \
 TRAINER.DAPL.TAU ${TAU} \
