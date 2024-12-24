@@ -13,4 +13,4 @@ DATASET:
 
 MODEL:
   BACKBONE:
-    NAME: "Vit-B/16"
+    NAME: "ViT-B/16"

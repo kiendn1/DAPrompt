@@ -28,7 +28,7 @@ TRAIN:
 
 MODEL:
   BACKBONE:
-    NAME: "Vit-B/16"
+    NAME: "ViT-B/16"
 
 TRAINER:
   DAPL:
