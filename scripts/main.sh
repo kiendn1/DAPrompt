@@ -21,7 +21,7 @@ do
         echo "Results are available in ${DIR}. Skip this job"
     else
         echo "Run this job and save the output to ${DIR}"
-        srun -J testit -N 1 -p RTX2080Ti --gres gpu:1 --priority 9999999 \
+        # srun -J testit -N 1 -p RTX2080Ti --gres gpu:1 --priority 9999999 \
         python train.py \
         --root "/kaggle/input/oh-data" \
         --seed ${SEED} \
