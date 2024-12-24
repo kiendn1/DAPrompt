@@ -300,8 +300,10 @@ class DAPL(TrainerXU):
         """Generic training loops."""
 
         self.before_train()
+        print('aaa')
         for self.epoch in range(self.start_epoch, self.max_epoch):
             self.before_epoch()
+            print('bbbb')
             self.run_epoch()
             self.after_epoch()
         self.after_train()
