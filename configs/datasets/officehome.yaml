@@ -5,9 +5,9 @@ INPUT:
 DATASET:
   NAME: "OfficeHome"
   SOURCE_DOMAINS: ["art"]
-  TARGET_DOMAINS: ["clipart"]
+  # TARGET_DOMAINS: ["clipart"]
   # TARGET_DOMAINS: ["art"]
-  # TARGET_DOMAINS: ["product"]
+  TARGET_DOMAINS: ["product"]
   # TARGET_DOMAINS: ["real_world"]
 # you can modify the code to explore four domains
 
