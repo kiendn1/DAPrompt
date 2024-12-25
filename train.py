@@ -80,7 +80,7 @@ def extend_cfg(cfg):
     cfg.TRAINER.DAPL.CSC = False  # class-specific context
     cfg.TRAINER.DAPL.PREC = "fp16"  # fp16, fp32, amp
     cfg.TRAINER.DAPL.T = 1.0
-    cfg.TRAINER.DAPL.TAU = 0.5
+    cfg.TRAINER.DAPL.TAU = 0.6
     cfg.TRAINER.DAPL.U = 1.0
     # cfg.DATALOADER.TRAIN_X.SAMPLER = "RandomSampler"
     # cfg.DATALOADER.TRAIN_U.SAMPLER = "RandomSampler"
