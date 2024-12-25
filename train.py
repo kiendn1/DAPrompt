@@ -89,7 +89,6 @@ def extend_cfg(cfg):
 def setup_cfg(args):
     cfg = get_cfg_default()
     extend_cfg(cfg)
-    print(cfg)
 
     # 1. From the dataset config file
     if args.dataset_config_file:
@@ -111,7 +110,6 @@ def setup_cfg(args):
 
 
 def main(args):
-    print('hello')
     cfg = setup_cfg(args)
     if cfg.SEED >= 0:
         print("Setting fixed seed: {}".format(cfg.SEED))
