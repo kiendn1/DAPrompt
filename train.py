@@ -205,6 +205,5 @@ if __name__ == "__main__":
         nargs=argparse.REMAINDER,
         help="modify config options using the command-line",
     )
-    print('jjh')
     args = parser.parse_args()
     main(args)
