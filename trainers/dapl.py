@@ -303,7 +303,7 @@ class DAPL(TrainerXU):
         for self.epoch in range(self.start_epoch, self.max_epoch):
             self.before_epoch()
             self.run_epoch()
-            self.after_epoch()
+            # self.after_epoch()
         self.after_train()
 
     def run_epoch(self):
