@@ -355,7 +355,7 @@ class DAPL(TrainerXU):
                 nb_remain += self.num_batches - self.batch_idx - 1
                 nb_remain += (self.max_epoch - self.epoch -
                               1) * self.num_batches
-                eta_seconds = batch_time.avg * nb_remain
+                # eta_seconds = batch_time.avg * nb_remain
                 # eta = str(datetime.timedelta(seconds=int(eta_seconds)))
                 # print("epoch [{0}/{1}][{2}/{3}]\t"
                 #       "time {batch_time.val:.3f} ({batch_time.avg:.3f})\t"
